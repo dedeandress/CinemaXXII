@@ -1,0 +1,12 @@
+*.iml
+.gradle
+/local.properties
+/.idea
+/build
+.DS_Store
+/captures
+.externalNativeBuild
+*.keystore
+/app/development
+/keystore-danakybvendor-android.properties
+*.properties
