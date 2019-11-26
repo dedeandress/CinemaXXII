@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "245338538101",
+    "firebase_url": "https://cinemaxxii.firebaseio.com",
+    "project_id": "cinemaxxii",
+    "storage_bucket": "cinemaxxii.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:245338538101:android:c50bfd4de6e63b8d86b83c",
+        "android_client_info": {
+          "package_name": "com.dedeandres.cinemaxxii"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "245338538101-kgn91mv53chjqr1e30hoof0fqt3dnnkj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwGDcIDfjaae-jAl1XY3PB3Qcjw2zEj5U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "245338538101-kgn91mv53chjqr1e30hoof0fqt3dnnkj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
