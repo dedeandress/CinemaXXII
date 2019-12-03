@@ -1,14 +1,18 @@
 package com.dedeandres.cinemaxxii.di
 
 import com.dedeandres.cinemaxxii.MainActivity
+import com.dedeandres.cinemaxxii.di.module.ViewModelFactoryModule
 import com.dedeandres.cinemaxxii.di.module.ViewModelModule
+import com.dedeandres.cinemaxxii.di.repository.HomeModule
 import com.dedeandres.cinemaxxii.di.util.FeatureScope
-import com.dedeandres.cinemaxxii.view.HomeFragment
+import com.dedeandres.cinemaxxii.view.home.HomeFragment
 import dagger.Component
 
 @Component(
     modules = [
-        ViewModelModule::class
+        HomeModule::class,
+        ViewModelModule::class,
+        ViewModelFactoryModule::class
     ],
     dependencies = [CoreComponent::class]
 )

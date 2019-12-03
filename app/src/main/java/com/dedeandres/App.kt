@@ -18,7 +18,7 @@ class App : MultiDexApplication(), CoreComponentProvider{
     override fun provideCoreComponent(): CoreComponent? {
         if (coreComponent == null) {
             coreComponent = DaggerCoreComponent.builder()
-                .networkModule(NetworkModule("www.google.com"))
+                .networkModule(NetworkModule("https://api.themoviedb.org/3/"))
                 .build()
         }
 

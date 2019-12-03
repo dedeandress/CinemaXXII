@@ -6,6 +6,9 @@ buildscript {
     ext.okhttpLoggingVersion = "3.11.0"
     ext.daggerVersion = "2.18"
     ext.multidexVersion = "2.0.1"
+    ext.rxkotlinVersion = "2.2.0"
+    ext.rxandroidVersion = "2.1.0"
+    ext.rxbindingVersion = "2.1.1"
     repositories {
         google()
         jcenter()
@@ -24,7 +27,6 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
     }
 }
 

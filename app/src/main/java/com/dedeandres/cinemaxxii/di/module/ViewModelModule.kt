@@ -2,7 +2,7 @@ package com.dedeandres.cinemaxxii.di.module
 
 import androidx.lifecycle.ViewModel
 import com.dedeandres.cinemaxxii.di.util.ViewModelKey
-import com.dedeandres.cinemaxxii.view.HomeViewModel
+import com.dedeandres.cinemaxxii.view.home.HomeViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap

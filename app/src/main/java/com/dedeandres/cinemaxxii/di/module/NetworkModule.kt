@@ -1,6 +1,7 @@
 package com.dedeandres.cinemaxxii.di.module
 
 import com.google.gson.Gson
+import com.jakewharton.retrofit2.adapter.kotlin.coroutines.CoroutineCallAdapterFactory
 import dagger.Module
 import dagger.Provides
 import okhttp3.Interceptor
@@ -31,7 +32,8 @@ class NetworkModule(private val url: String) {
             .baseUrl(url)
             .client(okHttpClient)
             .addConverterFactory(GsonConverterFactory.create())
-            .addCallAdapterFactory(RxJava2CallAdapterFactory.create()).build()
+            .addCallAdapterFactory(CoroutineCallAdapterFactory())
+            .build()
     }
 
     @Singleton
@@ -44,6 +46,8 @@ class NetworkModule(private val url: String) {
             .followRedirects(false)
             .connectTimeout(REQUEST_TIME_OUT, TimeUnit.SECONDS)
             .readTimeout(REQUEST_TIME_OUT, TimeUnit.SECONDS)
+
+        clientBuilder.interceptors().add(httpLoggingInterceptor)
 
         return clientBuilder.build()
     }
